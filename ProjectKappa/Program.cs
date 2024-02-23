@@ -3,15 +3,15 @@ using RabbitMQ.Client.Events;
 using System.Text;
 
 ConnectionFactory connectionFactory = new();
-connectionFactory.Uri = new Uri(uriString: "amqp://guest:guest@192.168.16.1:5672");
+connectionFactory.Uri = new Uri(uriString: "amqp://guest:guest@151.145.36.179:5672");
 connectionFactory.ClientProvidedName = "ProjectKappa";
 
 IConnection connection = connectionFactory.CreateConnection();
 IModel channel = connection.CreateModel();
 
-string exchangeName = "zeta-exchange";
-string routingKey = "zeta-routing-key";
-string queueName = "zeta-queue";
+string exchangeName = "iota-exchange";
+string routingKey = "iota-routing-key";
+string queueName = "iota-queue";
 
 channel.ExchangeDeclare(exchangeName, ExchangeType.Direct);
 channel.QueueDeclare(queueName, false, false, false, null);
