@@ -3,7 +3,7 @@ using RabbitMQ.Client.Events;
 using System.Text;
 
 ConnectionFactory connectionFactory = new();
-connectionFactory.Uri = new Uri(uriString: "amqp://guest:guest@151.145.36.179:5672");
+connectionFactory.Uri = new Uri(uriString: "amqp://guest:guest@IpAddressAndPort");//IP Address and port comes here
 connectionFactory.ClientProvidedName = "ProjectKappa";
 
 IConnection connection = connectionFactory.CreateConnection();
