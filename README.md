@@ -1,1 +1,1 @@
-This project is a test project for RabbbitMq. It just listens messages and writes to console.
+This project is a sample project for RabbbitMQ. It just listens messages and writes to console.
